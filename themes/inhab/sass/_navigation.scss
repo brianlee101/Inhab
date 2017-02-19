@@ -109,7 +109,9 @@ a {
 		display: block;
 	}
 }
-
+.site-header {
+	display:flex;
+}
 .comment-navigation,
 .posts-navigation,
 .post-navigation {

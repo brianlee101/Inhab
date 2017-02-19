@@ -1,0 +1,29 @@
+        /*--------------------------------------------------------------
+# Home 
+--------------------------------------------------------------*/
+    
+    .site-content {
+        display: flex;
+        justify-content: center;
+        border: 1px solid #e1e1e1;
+        .page-div {
+            display: flex;
+            flex-direction: row;
+            width: 1120px;
+          
+            
+                .content-area  {
+                     display: flex;
+                     width: 73%;
+              
+                }
+                .widget-area {
+                    padding-left: 5%;
+                    width: 27%;
+                    padding-top: 3rem;
+                    padding-bottom: 3rem;
+                   
+                }
+            }
+        }
+    
