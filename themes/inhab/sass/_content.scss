@@ -47,3 +47,222 @@
 .bypostauthor {
 	display: block;
 }
+
+/* New CSS */
+
+#content {
+	width: 1120px;
+	margin: 0 auto;
+}
+
+.site-content {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+fieldset {
+    border: 30px solid black;
+}
+
+#primary {
+	flex-basis: 73%;
+	margin: 55px auto 0 auto;
+	padding: 5% 5% 0 0;
+	border-right: 1px solid $solid_border;
+
+	.entry-title{
+		font-family: $font_secondary;
+		text-transform: uppercase;
+
+		a:hover{
+			color: #f0e4d1;
+		}
+	}
+
+	h2 {
+		font-family: $font_secondary;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 30px;
+		font-weight: bold;
+	}
+}
+
+.entry-title {
+	font-family: 'novecentosanswide-demibold-webfont';
+}
+
+.single-post {
+	@include picture-text;
+	
+	button {
+		margin: 0;
+	}
+} 
+
+
+//journal page
+.blog {
+	@include picture-text;
+}
+
+.archive {
+	@include picture-text;
+}
+
+button {
+	border: 1px solid black;
+	font-family: $font_secondary;
+	width: 140px;
+	height: 40px;
+	padding: 5px;
+	margin: 0 20px 40px 0;
+	background-color: white;
+	text-transform: uppercase;
+	font-size: 14px;
+
+//brian checker
+
+	a {
+		text-decoration: none;
+		font-family: $font_secondary;
+		color: black;
+	}
+}
+
+button:hover {
+	background-color: #248A83;
+	color: white;
+
+	a {
+		color: white;
+	}
+}
+
+input {
+	background-color: #F4F4F4;
+}
+
+textarea {
+	background-color: #F4F4F4;
+}
+
+label {
+	text-transform: uppercase;
+}
+
+input[type=submit] {
+	border: none;
+	width: 100px;
+	height: 40px;
+	color: white;
+	padding: 5px;
+	margin: 0 20px 40px 0;
+	background-color: #248A83;
+	text-transform: uppercase;
+	font-size: 14px;	
+}
+
+input[type=submit]:hover {
+	background-color: #248A83;
+}
+
+.page-template-about {
+	height: 100vh;
+}
+
+ol {
+		list-style: none;
+}
+
+#comments {
+	margin-top: 60px;
+}
+
+.comment-list {
+
+	article {
+		display: flex;
+		align-items: center;
+		border-bottom: 1px solid $solid_border;
+		margin: 10px;
+		padding: 10px;
+
+		a {
+			text-decoration: none;
+		}
+
+		.fn {
+			font-style: normal;
+			font-family: $font_secondary;
+			font-weight: bold;
+		}
+
+		.comment-metadata {
+			color: #248A83;
+		}
+
+		.fn {
+			font-family: 'merriweatherbold';
+		}
+	}
+}
+
+
+.comment-author-avatar{
+	display: inline-block;
+	margin-bottom: 50px;
+	padding-right: 20px;
+
+    img {
+        border-radius: 50%;
+    }
+    
+}
+
+.comment-content {
+	display: inline-block;
+}
+
+
+.error404 {
+	
+	ul {
+		padding: 0;
+		margin: 0;
+	}
+
+	li {
+		list-style: none;
+		list-style-position: inside;
+		
+		a {
+			text-decoration: none;
+		}
+	}
+	
+	fieldset {
+		border: none;
+	}
+
+	select {
+		margin-bottom: 60px;
+	}
+
+	button {
+		display: none;
+	}
+
+	h1 {
+		font-family: $font_secondary;
+		font-weight: bold;
+		text-transform: uppercase;
+		font-size: 36px;
+		font-weight: bold;
+	}
+}
+
+
+
+
+

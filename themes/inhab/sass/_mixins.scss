@@ -10,3 +10,75 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+
+@mixin picture-text {
+
+	.entry-header {
+		letter-spacing: .2rem;
+		position: relative;
+		line-height: 2.5rem;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+
+
+		.entry-title:hover {
+			color: #f0e4d1;
+		}
+
+		.entry-title{
+			text-transform: uppercase;
+			position: absolute;
+			padding: 15px;
+			background-color: #248A83;
+			top: 0px;
+			width: 75%;
+			color: white;
+			font-size: 32px !important; 
+			
+
+
+			a {
+				color: white;
+				font-size: 33px;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+		}
+
+		.entry-meta {
+			font-family: $font_secondary;
+			font-size: 16px;
+			letter-spacing: normal;
+			text-transform: uppercase;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			padding: 0 5px;
+			margin: 14px 0;
+			background-color: #248A83;
+			color: white;
+		}
+	} 
+}
+
+@mixin heading-style  {
+	font-family: 'novecentosanswide-demibold-webfont';
+	color: #d99054;
+	text-transform: uppercase;
+}
+
+
+//for the tags and category text on journal posts
+@mixin tags-categs {
+    text-transform: uppercase;
+    font-family: $font_secondary;
+
+    a {
+        padding-right: 15px;
+        color: #808080;
+        text-decoration: none;
+    }
+}

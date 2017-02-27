@@ -1,9 +1,9 @@
 /*!
-Theme Name: Brian's Theme
+Theme Name: Inhabitent
 Theme URI: http://underscores.me/
-Author: BLEE
+Author: Drewber
 Author URI: http://www.redacademy.com
-Description: A WordPress theme for Brian.
+Description: A WordPress theme for outdoor hipsters.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -51,17 +51,21 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "mixins";
 
 // CSS included in style.css.
+
 @import "normalize";
-@import "home";
 @import "fonts";
 @import "typography";
 @import "elements";
 @import "forms";
 @import "navigation";
+@import "sidebar";
+@import "search";
 @import "modules";
 @import "widgets";
 @import "content";
-@import "media";
-@import "sidebar";
-@import "page-templates";
+@import "archive";
+@import "frontpage";
+@import "page";
 @import "footer";
+@import "media";
+@import "page-templates";

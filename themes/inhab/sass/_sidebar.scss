@@ -1,14 +1,53 @@
-/*--------------------------------------------------------------
-# Sidebar
---------------------------------------------------------------*/
-body, button, input, select, textarea {
-    color: #404040;
-    font-family: Merriweather Web,serif;
-    font-size: 1rem;
-    line-height: 1.75;
+#secondary {
+    height: 100%;
+    flex-basis: 27%;
+	margin: 55px auto 0 auto;
+	padding: 5% 0 0 5%;
+    color: #2f1339;
+    line-height: 1.75rem;
+
+    h2 {
+        font-family: $font_secondary;
+        font-weight: bold;
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    i {
+		width: 30px;
+	}
+
+    a {
+        color: #a1a1a1;
+    }
 }
 
+.day-of-week {
+    font-family: $font__main;
+}
 
-html {
-    box-sizing: border-box;
+.widget {
+    p {
+        margin: 10px 0;
+    }
+}
+
+.widget-title {
+    font-size: 26px;
+}
+
+#archives-2 {
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+
+        li {
+            a {
+                text-decoration: none;
+            }      
+        }
+    }
 }

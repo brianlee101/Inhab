@@ -1,0 +1,57 @@
+.about-head {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(180deg,rgba(0,0,0,.4),rgba(0,0,0,.4)),#969696 url(../../images/about-hero.jpg);
+    background-size: cover, cover;
+
+    h1 {
+        align-self: center;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 46px;
+        color: white;
+        font-family: $font_secondary;
+        font-weight: bold;
+    }
+}
+
+
+.page-about {
+	.entry-content{
+		margin: 5% 15%;
+	}
+
+	h2 {
+		font-size: 34px;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: $font_secondary;
+        font-weight: bold;
+	}
+
+
+    .entry-header {
+        display: flex;
+        justify-content: center;
+
+        .entry-title {
+            color: white;
+            align-self: center;
+            font-size: 44px;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: $font_secondary;
+            font-weight: bold;
+        }
+    }
+
+    #content {
+        padding: 5% 10%;
+    }
+    
+}
+
+.cat-links, .tags-links {
+    @include tags-categs;
+}

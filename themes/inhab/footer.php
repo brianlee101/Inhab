@@ -8,15 +8,21 @@
 ?>
 
 			</div><!-- #content -->
-
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
-					<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
+				<div class='main-footer-container'>
+					<div class='footer-widgets'>
+						<?php dynamic_sidebar( 'footer' ); ?>
+					</div>
+					<div class="inhab-logo-text">
+						<img src ="<?php echo get_template_directory_uri();?>/images/logos/inhabitent-logo-text.svg" />
+					</div>
+				</div>
 				</div><!-- .site-info -->
+				<div class="copy-right"> 
+					</p>COPYRIGHT © 2016 INHABITENT</p>
+				</div>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
-
-		<?php wp_footer(); ?>
 
 	</body>
 </html>

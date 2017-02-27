@@ -9,12 +9,12 @@ html {
 
 *,
 *:before,
-*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*:after {
 	box-sizing: inherit;
 }
 
 body {
-	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+	background: $color__background-body;
 }
 
 blockquote, q {
@@ -60,11 +60,31 @@ dd {
 }
 
 img {
-	height: auto; /* Make sure images are scaled correctly. */
-	max-width: 100%; /* Adhere to container width. */
+	height: auto;
+	max-width: 100%; 
 }
 
 table {
 	margin: 0 0 $base__space-unit;
 	width: 100%;
+}
+
+h2 {
+	letter-spacing: 3px;
+}
+
+h3 {
+	font-family: $font_secondary;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 26px;
+	font-weight: bold;
+}
+
+a:hover {
+	color: $color__link-hover;
+}
+
+p{
+	line-height: 1.75;
 }

@@ -7,26 +7,27 @@
 
 get_header(); ?>
 <div id="content" class="site-content">
-	<div id="primary" class="content-area">
+	<div class="content-area product">
 		<main id="main" class="site-main" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
-
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
-				<button><i class="fa fa-facebook"></i><a href="http:/www.facebook.com"> Like</a></button>
+        <div class="shop-item">
+            <div class="item-img">
+                <?php the_post_thumbnail( 'large' ); ?>
+            </div>
+            <div class="item-text">
+                <h2><?php the_title(); ?></h2>
+                <p class="price-text">$<?php echo CFS()->get('price');?></p>
+                <p><?php the_excerpt(); ?></p>
+                <button><i class="fa fa-facebook"></i><a href="http:/www.facebook.com"> Like</a></button>
                 <button><i class="fa fa-twitter"></i><a href="http:/www.twitter.com">Tweet</a></button>
                 <button><i class="fa fa-pinterest"></i><a href="http:/www.pintrest.com">Pin</a></button>
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+            </div>
+        </div>
 
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-<?php get_sidebar(); ?>
 </div>
 <?php get_footer(); ?>

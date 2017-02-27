@@ -7,7 +7,9 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+
+<!--DEFAULT PAGE, NOT ACTIVE ON ANY PAGE CURRENTLY-->
+	<div id="primary" class="content-area content">
 		<main id="main" class="site-main" role="main">
 
 		<?php if ( have_posts() ) : ?>

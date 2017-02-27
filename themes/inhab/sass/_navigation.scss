@@ -26,21 +26,34 @@ a {
 
 /* Menus */
 
+.home .main-navigation {
+	background: url(../../images/logos/inhabitent-logo-tent-white.svg);
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	background-position: 5%; 
+}
+
 .main-navigation {
 	clear: both;
-	display: block;
-	float: left;
+	display: flex;
+	justify-content: flex-end;
 	width: 100%;
+	padding: 5px;
+	background: url(../../images/logos/inhabitent-logo-tent.svg);
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	background-position: 5%; 
+	background-color: rgba(0, 0, 0, 0);
 
 	ul {
-		display: none;
 		list-style: none;
 		margin: 0;
 		padding-left: 0;
+		display: flex;
+		flex-direction: row;
 
 		ul {
 			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
 			position: absolute;
 			top: $base__space-unit;
 			left: -999rem;
@@ -52,6 +65,7 @@ a {
 			}
 
 			li {
+				display: inline-block;
 				&:hover > ul,
 				&.focus > ul {
 					left: 100%;
@@ -61,37 +75,7 @@ a {
 			a {
 				width: 200px;
 			}
-
-			:hover > a,
-			.focus > a {
-			}
-
-			a:hover,
-			a.focus {
-			}
 		}
-
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
-		}
-	}
-	li {
-		float: left;
-		position: relative;
-
-		&:hover > a,
-		&.focus > a {
-		}
-	}
-	a {
-		display: block;
-		text-decoration: none;
-	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a {
 	}
 }
 
@@ -109,9 +93,7 @@ a {
 		display: block;
 	}
 }
-.site-header {
-	display:flex;
-}
+
 .comment-navigation,
 .posts-navigation,
 .post-navigation {
@@ -132,3 +114,167 @@ a {
 		width: 50%;
 	}
 }
+
+/* New CSS */
+
+#masthead {
+	font-family: $font_secondary;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	border-bottom: 1px solid $solid_border;
+	z-index: +1;
+	background: rgba(255, 255, 255, .8 );
+
+	button {
+		color: #808080;
+	}
+
+	.home-link {
+		width: 100px;
+		height: 50px;
+		position: absolute;
+		top: 10px;
+		left: 60px;
+	}
+
+	.site-title {
+		height: 30px;
+		width: 30px;
+	}
+
+	i {
+		padding: 10px;
+	}
+	
+
+	ul {
+		display: flex;
+
+		li {
+			display: inline-block;
+			padding: 10px;
+
+			a {
+				color: #808080;
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+
+			a:hover {
+				color: #2f1339;
+			}	
+		}
+	}
+
+	i {
+		color: #808080;
+		padding: 10px;
+	}
+}
+
+#masthead-home {
+	padding: 0 5%;
+	font-family: $font_secondary;
+	width: 100%;
+	z-index: +1;
+	position: absolute;
+	background: rgba(255, 255, 255, 0 );
+
+	::placeholder {
+		color: #f0e4d1;
+	}
+
+	button {
+		color: white;
+	}
+
+	.home-link {
+		width: 100px;
+		height: 50px;
+		position: absolute;
+		top: 10px;
+		left: 60px;
+	}
+
+	.site-title {
+		height: 30px;
+		width: 30px;
+	}
+
+	.site-branding a {
+		width: 100px;
+		height: 100px;
+	}
+
+	ul {
+		display: flex;
+
+		li {
+			display: inline-block;
+			padding: 10px;
+
+			a {
+				color: white;
+				text-transform: uppercase;
+				text-decoration: none;
+			}
+
+			a:hover {
+				color: #f0e4d1;
+			}	
+		}
+	}
+	i {
+		color: white;
+		padding: 10px;
+	}	
+}
+
+.search-form {
+
+	fieldset {
+		border: none;
+		padding: 0;
+
+		button {
+			background-color: rgba(0, 0, 0, 0);
+			display: inline-block;
+			margin: 0;
+			padding: 0;
+			border: none;
+			width: auto;
+			outline: none;
+		}
+
+		button:hover {
+			background-color: rgba(0, 0, 0, 0);
+			border: none;
+		}
+
+		button:focus {
+			border: none;
+		}
+
+		.search-field {
+			color: $color__link-hover;
+			outline: none;
+			border: none;
+			background: rgba(0,0,0,0);
+			transition: all 1s;
+			width: 0px;
+			text-transform: uppercase;
+			font-family: $font_secondary;
+		}
+
+		.search-width {
+			width: 180px;
+		}
+
+		.search-field:focus {
+			border: none;
+		}
+	}
+}
+
+
